@@ -1,4 +1,4 @@
-import Accordian from "./Accordian";
+import Accordion from "./Accordion";
 import "./DogList.css";
 import Dog from "./Dog";
 
@@ -11,9 +11,9 @@ const DogDisplay = (props: PropType) => {
   return (
     <>
       {sortedDogBreeds.map((breed) => (
-        <Accordian title={breed.name}>
+        <Accordion title={breed.name}>
           <Dog breedData={breed} />
-        </Accordian>
+        </Accordion>
       ))}
     </>
   );
