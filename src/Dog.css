@@ -1,0 +1,9 @@
+.breed-detail {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+
+.breed-label {
+  font-weight: bolder;
+}

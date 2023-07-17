@@ -1,0 +1,44 @@
+.accordion {
+  width: 60vw;
+  margin: 2rem auto;
+}
+
+.accordion-title {
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #21aecaab;
+}
+
+.accordion-title:hover {
+  background-color: #3ab4cc;
+}
+
+.accordion-title-icon,
+.accordion-title-text {
+  color: black;
+  font-weight: bolder;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+
+.accordion-content {
+  width: 60vw;
+  background-color: #7e7e7e;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+
+  .accordion,
+  .accordion-content {
+    width: 90%;
+  }
+}
