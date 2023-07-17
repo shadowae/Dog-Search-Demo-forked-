@@ -2,26 +2,9 @@ import React, { useState, useEffect } from "react";
 import Spinner from "./Spinner";
 import axios from "axios";
 import "./Dog.css";
+import DogBreedType from "./types/DogBreedType";
 
-interface BreedDataProps {
-  weight: {
-    imperial: string;
-    metric: string;
-  };
-  height: {
-    imperial: string;
-    metric: string;
-  };
-  id: number;
-  name: string;
-  bred_for: string;
-  breed_group: string;
-  life_span: string;
-  temperament: string;
-  reference_image_id: string;
-}
-
-const Dog: React.FC<{ breedData: BreedDataProps }> = ({ breedData }) => {
+const Dog: React.FC<{ breedData: DogBreedType }> = ({ breedData }) => {
   const [imageUrl, setImageUrl] = useState("./placeholderimage.svg");
   const [isLoading, setIsLoading] = useState(false);
 

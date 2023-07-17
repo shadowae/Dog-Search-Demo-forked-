@@ -1,6 +1,7 @@
 import extractNumericValues from "./ExtractNumericValues";
+import DogBreedType from "../types/DogBreedType";
 
-const sortDogBreeds = (breeds, sortCriteria) => {
+const sortDogBreeds = (breeds: DogBreedType[], sortCriteria: string) => {
   const sortedBreeds = [...breeds];
 
   sortedBreeds.sort((a, b) => {
