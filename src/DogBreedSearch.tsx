@@ -4,7 +4,7 @@ import sortDogBreeds from "./utils/SortDogBreed";
 import DogList from "./DogList";
 
 const DogBreedSearch = () => {
-  const [userInput, setUserInput] = useState("Grey");
+  const [userInput, setUserInput] = useState("");
   const [dogBreeds, setDogBreeds] = useState([]);
   const [sortCriteria, setSortCriteria] = useState("name");
 
@@ -29,6 +29,8 @@ const DogBreedSearch = () => {
 
     if (userInput) {
       delayedSearch();
+    } else {
+      setDogBreeds([]);
     }
 
     return () => {

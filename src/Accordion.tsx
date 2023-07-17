@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Accordian.css";
+import "./Accordion.css";
 
 interface AccordionProps {
   title: string;
@@ -7,7 +7,7 @@ interface AccordionProps {
 }
 
 const Accordion: React.FC<AccordionProps> = ({ title, children }) => {
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
 
   return (
     <div className="accordion-item">
