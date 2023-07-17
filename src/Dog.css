@@ -5,5 +5,11 @@
 }
 
 .breed-label {
+  text-align: start;
   font-weight: bolder;
+  width: 110px;
+}
+
+.breed-value {
+  padding-left: 10px;
 }

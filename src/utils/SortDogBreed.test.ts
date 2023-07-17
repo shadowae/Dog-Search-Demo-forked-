@@ -1,30 +1,56 @@
 import sortDogBreeds from "./SortDogBreed";
 
+// Do note that weight, bred_for, breed_group and temperament are placeholder text to simulate actual object shape.
+
 const BreedA = {
   id: 1,
   name: "Breed A",
   height: {
-    metric: "20 - 40"
+    metric: "20 - 40",
+    imperial: "20 - 40",
   },
-  life_span: "10 - 15 years"
+  weight: {
+    metric: "20 - 40",
+    imperial: "20 - 40",
+  },
+  bred_for: "",
+  breed_group: "",
+  temperament: "",
+  life_span: "10 - 15 years",
 };
 
 const BreedB = {
   id: 2,
   name: "Breed B",
   height: {
-    metric: "15 - 30"
+    metric: "15 - 30",
+    imperial: "15 - 30",
   },
-  life_span: "8 - 12 years"
+  weight: {
+    metric: "20 - 40",
+    imperial: "20 - 40",
+  },
+  bred_for: "",
+  breed_group: "",
+  temperament: "",
+  life_span: "8 - 12 years",
 };
 
 const BreedC = {
   id: 3,
   name: "Breed C",
   height: {
-    metric: "35 - 50"
+    metric: "35 - 50",
+    imperial: "35 - 50",
   },
-  life_span: "12 - 18 years"
+  weight: {
+    metric: "20 - 40",
+    imperial: "20 - 40",
+  },
+  bred_for: "",
+  breed_group: "",
+  temperament: "",
+  life_span: "12 - 18 years",
 };
 
 describe("sortDogBreeds", () => {
